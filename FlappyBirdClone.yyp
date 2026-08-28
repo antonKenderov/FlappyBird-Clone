@@ -20,6 +20,7 @@
   "name":"FlappyBirdClone",
   "resources":[
     {"id":{"name":"obj_bird","path":"objects/obj_bird/obj_bird.yy",},},
+    {"id":{"name":"obj_land","path":"objects/obj_land/obj_land.yy",},},
     {"id":{"name":"obj_pipe","path":"objects/obj_pipe/obj_pipe.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},

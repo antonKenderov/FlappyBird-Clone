@@ -1,1 +1,1 @@
-scroll_speed = 4;
+scroll_speed = global.scroll_speed;

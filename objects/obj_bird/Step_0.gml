@@ -1,6 +1,6 @@
 vspeed += grav;
 
-if (keyboard_check_pressed(vk_space)) {
+if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
 	vspeed = flap_speed;
 }
 
@@ -10,6 +10,10 @@ tilt_angle = lerp(tilt_angle, target_tilt, tilt_speed);
 image_angle = tilt_angle;
 
 if (place_meeting(x, y+1, obj_land)) {
+	global.game_over = true;
+}
+
+if (place_meeting(x, y, obj_pipe)) {
 	global.game_over = true;
 }
 

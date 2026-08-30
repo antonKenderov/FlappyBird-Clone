@@ -21,6 +21,9 @@ if (!global.game_over) {
 		_top.image_xscale = pipe_xscale;
 		_top.image_yscale = -_gap_top / _h;
 
+		var _zone_x = _x + sprite_get_width(spr_pipe) * pipe_xscale;
+		instance_create_layer(_zone_x, _gap_center, "Instances_1", obj_score_zone);
+
 		spawn_timer = 0;
 		spawn_interval = irandom_range(gap_min, gap_max) / global.scroll_speed;
 	}
